@@ -1,3 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EntregaEmpotrados</string>
+    <string name="app_name">Ronda</string>
+
+    <string-array name="menu">
+        <item> Monumentos </item>
+        <item> Museos </item>
+        <item> Agenda Cultural </item>
+        <item> Dónde Comer </item>
+        <item> Dónde Dormir </item>
+        <item> Información de Interés </item>
+    </string-array>
+
+
+    <string-array name="monumentos_titulo">
+        <item> Plaza de Toros </item>
+        <item> Arco Felipe V </item>
+        <item> Casa Rey Moro </item>
+        <item> Murallas </item>
+        <item> Iglesia Santa Maria La Mayor </item>
+        <item> Baños Árabes </item>
+    </string-array>
+
+    <string-array name="monumentos_contenido">
+        <item> La Plaza de Toros de Ronda, por su historia y por su arquitectura, por su carácter y belleza está reconocida como una de las más antiguas y monumentales que existen. Esto no es casualidad, ya que Ronda se considera una de las cunas de la tauromaquia moderna S. XVIII. Siglo donde tras el relevo de los caballeros en los juegos con el toro surge en la cuidad la familia de los Romero, familia que durante tres generaciones reúne a los toreros más singulares de la época.
+        El auge del toreo llevó a la Real Maestranza de Caballería de Ronda a erigir su famosa plaza, obra que se atribuye a Martín de Aldehuela, el mismo arquitecto del grandioso Puente Nuevo sobre el Tajo de Ronda.
+        Concebida en piedra arenisca con un esquema monumental, la nobleza de su traza arquitectónica, con su doble galería de arcadas y la ausencia de tendidos al descubierto, le confiere un espíritu más de claustro que de recinto para espectáculos taurinos, recordando al patio circular del famoso Palacio de Carlos V en la Alhambra de Granada.
+        Cubierta con tejado a dos aguas de teja árabe, la elegancia de su interior no tiene parangón en ninguna otra plaza de toros.</item>
+        <item> Tras el hundimiento del primer puente nuevo en el año 1.741, se planteó la necesidad de mejorar esta entrada de la ciudad debido al gran flujo de personas y mercancías que de nuevo se vieron obligados a utilizarla.
+        La vieja Puerta Árabe del Puente fue sustituida y agrandada por la actual durante el reinado del primer Borbón del trono español Felipe V, en el año 1742, según consta en la inscripción en piedra situada próxima a la puerta.
+        Este emblemático monumento de la ciudad consta de un arco doble de sillería, coronado por tres pináculos y adornado con la concha de los Anjou y el escudo real de los Borbones en su cara exterior.</item>
+        <item> Se localiza en la calle Cuesta de Santo Domingo. La primera prueba documental de esta imponente casa-palacio data del siglo XVIII, aunque ha sufrido frecuentes reestructuraciones fruto de los sucesivos cambios de propietario. La planta de la casa es irregular y laberíntica, con abundantes escaleras y pasillos que sirven para salvar los desniveles. La fachada, de gran longitud, se adapta a la curva de la calle y presenta dos torres de distinta altura así como dos puertas.
+        En su interior se conserva la mina de captación de agua, de origen árabe. Se trata de una compleja obra islámica que desciende al fondo del Tajo donde discurre el Río Guadalevín, que se construyó aprovechando una grieta vertical en la roca, donde se desarrolla una escalera tallada en la piedra con más de 200 peldaños y que desciende en vertical unos 100 metros. En su interior se localizan una serie de estancias, desde aljibes a habitaciones, que fueron utilizadas como polvorín y depósito de grano.</item>
+        <item> La ubicación de Ronda en un promontorio rocoso le ha conferido a lo largo de la historia un marcado valor estratégico y defensivo. En época musulmana se localizaba la Medina, claramente delimitada tanto por la barrera natural que supone la garganta excavada por el Guadalevín, como por las propias murallas de la ciudad.
+        De la importante cerca amurallada conservada, debemos destacar la puerta de Almocábar situada en el sector sur de la medina, construida en el siglo XIII y reestructurada en el periodo de Carlos V, toma su nombre de la palabra “Al-maqabir Fue un de las puertas principales de acceso a la ciudad y daba entrada al Barrio Alto, actualmente del Espíritu Santo y a la medina musulmana.</item>
+        <item> Según los estudios arqueológicos desarrollados en la zona, esta iglesia se ubicó muy próxima a los restos de una basílica paleocristiana del siglo V d.C. También algunos historiadores se remontan a la época romana en la que tuvo la función de templo. Este último extremo aún no se ha contrastado arqueológicamente.
+        En el mismo lugar se construyó después, bajo la dominación islámica, la mezquita mayor de la Medina. De ella solo se conserva en la actualidad el arco del Mirhab y un trozo del muro del mismo con decoración de ataurique, oculto tras el retablo del altar del sagrario.
+        Los Reyes Católicos, tras la conquista de la ciudad, ordenaron levantar en el lugar de la mezquita el templo, cuyas obras  se iniciaron en 1485 y tras muchas vicisitudes, se concluyeron a fines del siglo XVII.</item>
+        <item> Éste recinto termal de época musulmana es el  mejor conservado de la Península Ibérica. Se localiza en el Antiguo Arrabal Islámico de la Ciudad, actualmente denominado Barrio de San Miguel en el extrarradio de lo que fue en su momento la Medina Musulmana de Ronda.
+        Fue construido entre siglos XIII-XIV d.C junto al Arroyo de las Culebras, para asegurar el abastecimiento de agua, que se desplazaba a través de un sistema de noria, perfectamente conservado en la actualidad.
+        Estructurándose éstos en tres zonas fundamentales, siguiendo el modelo romano: salas de baño frío, templado y caliente. Hasta la actualidad ha llegado prácticamente en su integridad el sistema hidráulico de los mismos.</item>
+    </string-array>
+    <string name="title_activity_actividad_prueba">ActividadPrueba</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
 </resources>
