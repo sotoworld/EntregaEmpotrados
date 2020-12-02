@@ -1,20 +1,14 @@
 package com.example.entregaempotrados;
 
-import android.os.Bundle;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class listamenu extends AppCompatActivity {
+import android.os.Bundle;
 
-    private TextView mTextView;
+public class listamenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listamenu);
-
-        mTextView = (TextView) findViewById(R.id.text);
-
     }
 }
