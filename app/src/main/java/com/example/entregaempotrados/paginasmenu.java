@@ -8,7 +8,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class paginasmenu extends AppCompatActivity  {
+/**
+ * Created by DomingoJavier on 08/05/2016.
+ */
+public class paginasmenu extends AppCompatActivity {
 
     private ImageView imgImagen;
     private TextView txtTitulo,txtContenido;
@@ -23,6 +26,7 @@ public class paginasmenu extends AppCompatActivity  {
             R.drawable.monumentos_rey_moro,
             R.drawable.monumentos_toro,
     };
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

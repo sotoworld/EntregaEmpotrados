@@ -95,12 +95,12 @@ public class listamenu extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               /* Intent i = new Intent(getApplicationContext(), paginasmenu.class);
+               Intent i = new Intent(getApplicationContext(), paginasmenu.class);
                 i.putExtra("idmenu", currentViewPager);
                 i.putExtra("position", position);
                 i.putExtra("nombreMenu", nombreMenu);
                 i.putExtra("nombreSubMenu", titulo);
-                startActivity(i);*/
+                startActivity(i);
                 //overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
             }

@@ -20,5 +20,4 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/tv_contenido_paginasmenu" />
-
 </LinearLayout>
