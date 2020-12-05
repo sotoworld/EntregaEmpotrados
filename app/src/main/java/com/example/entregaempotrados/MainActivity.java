@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
     public String [] mMenu;
+    private String info;
 
     protected static Integer[] mImageIds={
             R.drawable.monumentos,//todas las imagenes del menu//
