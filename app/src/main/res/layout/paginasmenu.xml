@@ -21,4 +21,4 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/tv_contenido_paginasmenu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
