@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class paginasmenu {
+public class paginasmenu extends AppCompatActivity  {
 
     private ImageView imgImagen;
     private TextView txtTitulo,txtContenido;
