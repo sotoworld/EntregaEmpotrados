@@ -46,7 +46,8 @@ public class listamenu extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);//ir atras
 
         Bundle extras = getIntent().getExtras();
-        currentViewPager = extras.getInt("currentViewPager");
+        //currentViewPager = extras.getInt("currentViewPager");
+        currentViewPager = (int) SingletonMap.getInstance().get(MainActivity.clave);
         nombreMenu = extras.getString("nombreMenu");
         Log.i("domingo", "currentViewPager:" + currentViewPager);
 
@@ -58,16 +59,19 @@ public class listamenu extends AppCompatActivity {
         lista = (ListView) findViewById(R.id.ListView_ListaMenu);
         switch (currentViewPager) {
             case 0://monumentos
+                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);
                 contenido = getResources().getStringArray(R.array.monumentos_contenido);
                 adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
                 break;
             case 1://museos
+                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);
                 contenido = getResources().getStringArray(R.array.monumentos_contenido);
                 adapter = new ListViewAdapter(this,imagenMonumentos,titulo, contenido);
                 break;
             case 2://agenda cultural
+                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);
                 contenido = getResources().getStringArray(R.array.monumentos_contenido);
                 adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
@@ -95,7 +99,7 @@ public class listamenu extends AppCompatActivity {
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent i = new Intent(getApplicationContext(), paginasmenu.class);
+                Intent i = new Intent(getApplicationContext(), paginasmenu.class);
                 i.putExtra("idmenu", currentViewPager);
                 i.putExtra("position", position);
                 i.putExtra("nombreMenu", nombreMenu);

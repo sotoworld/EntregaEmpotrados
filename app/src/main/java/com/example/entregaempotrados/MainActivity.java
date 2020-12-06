@@ -1,12 +1,18 @@
 package com.example.entregaempotrados;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
@@ -17,16 +23,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     ViewPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
     public String [] mMenu;
+    static String clave = "clave";
     private String info;
+    private PagerAdapter adapter;
 
     protected static Integer[] mImageIds={
             R.drawable.monumentos,//todas las imagenes del menu//
@@ -43,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setLocale("en");
+        loadLocale();
         setContentView(R.layout.activity_main);
         //listview//
         lista=(ListView)findViewById(R.id.listViewHome);
@@ -55,11 +67,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        //viewpager//
+        Button cambiar = findViewById(R.id.button);
+        cambiar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+               mostrarVentanaCambio();
+                /*setLocale("es");
+                recreate();*/
+            }
+        });
+                //viewpager//
         mMenu=getResources().getStringArray(R.array.menu);
-        mSectionsPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
         mViewPager=(ViewPager)findViewById(R.id.pager);
-
+        mSectionsPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
+        //adapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+        String a = getResources().getString(R.string.prueba);
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(0,mMenu[0],mImageIds));
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(1,mMenu[1],mImageIds));
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(2,mMenu[2],mImageIds));
@@ -69,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
     }
+
+
 
     public class ViewPagerAdapter extends FragmentPagerAdapter {
         List<Fragment> fragments;//guardar fragmentos
@@ -98,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         private static final String CURRENT_VIEWPAGER="currentviewpager";
         private static final String NOMBRE_MENU="menu";
         private static final String IMAGEVIEW="image";
-
+        private String info;
         private int currentViewPager;
         private String nombre_menu;
         private int image;
@@ -139,12 +163,60 @@ public class MainActivity extends AppCompatActivity {
                     Intent i = new Intent(getActivity(), listamenu.class);
                     i.putExtra("currentViewPager", currentViewPager);
                     i.putExtra("nombreMenu", nombre_menu);
+                    SingletonMap.getInstance().put(MainActivity.clave, currentViewPager);
                     startActivity(i);
-
-
                 }
             });
             return rootView;
         }
     }
+
+    private void mostrarVentanaCambio(){
+        final String[] ids = {"English", "Español"};
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        mBuilder.setTitle("Choose Language");
+        mBuilder.setSingleChoiceItems(ids, -1, new DialogInterface.OnClickListener(){
+
+            @Override
+            public void onClick(DialogInterface interfaz, int i){
+                if (i==0){
+                    setLocale("en");
+                    Intent intent = getIntent();
+                    finish();
+                    startActivity(intent);
+                    //recreate();
+                }else if (i==1){
+                    setLocale("es");
+                    Intent intent = getIntent();
+                    finish();
+                    startActivity(intent);
+                    //recreate();
+                }
+                interfaz.dismiss();
+            }
+        });
+
+        AlertDialog mDialog = mBuilder.create();
+
+        mDialog.show();
+    }
+
+    private void setLocale(String lang){
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config  = getBaseContext().getResources().getConfiguration();
+        config.setLocale(locale);
+        getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics()) ;
+        SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
+        editor.putString("My_Lang", lang);
+        editor.apply();
+
+    }
+
+    private void loadLocale(){
+        SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        String idioma = prefs.getString("My_Lang", "");
+        setLocale(idioma);
+    }
 }
+

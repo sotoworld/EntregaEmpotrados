@@ -11,12 +11,12 @@
 
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/pager"
-        android:layout_alignParentTop="true"
+        android:layout_width="366dp"
+        android:layout_height="590dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -27,4 +27,12 @@
         android:layout_marginBottom="121dp"
         android:layout_alignRight="@+id/pager"
         android:layout_alignEnd="@+id/pager" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pager"
+        android:layout_marginBottom="-46dp"
+        android:text="@string/cambiar" />
 </RelativeLayout>
