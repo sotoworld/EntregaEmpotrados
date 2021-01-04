@@ -18,6 +18,7 @@
         <item> Murallas </item>
         <item> Iglesia Santa Maria La Mayor </item>
         <item> Baños Árabes </item>
+        <item> TEST </item>
     </string-array>
 
     <string-array name="monumentos_contenido">
@@ -38,8 +39,10 @@
         <item> Éste recinto termal de época musulmana es el  mejor conservado de la Península Ibérica. Se localiza en el Antiguo Arrabal Islámico de la Ciudad, actualmente denominado Barrio de San Miguel en el extrarradio de lo que fue en su momento la Medina Musulmana de Ronda.
         Fue construido entre siglos XIII-XIV d.C junto al Arroyo de las Culebras, para asegurar el abastecimiento de agua, que se desplazaba a través de un sistema de noria, perfectamente conservado en la actualidad.
         Estructurándose éstos en tres zonas fundamentales, siguiendo el modelo romano: salas de baño frío, templado y caliente. Hasta la actualidad ha llegado prácticamente en su integridad el sistema hidráulico de los mismos.</item>
+        <item> THE THINGS THAT WE WRITE HERE HAHAHAHAHTHE THINGS THAT WE WRITE HERE HAHAHAHAHTHE THINGS THAT WE WRITE HERE HAHAHAHAHTHE THINGS THAT WE WRITE HERE HAHAHAHAHTHE THINGS THAT WE WRITE HERE HAHAHAHAH</item>
     </string-array>
     <string name="cambiar">Cambiar idioma</string>
+    <string name="notas">Notas</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

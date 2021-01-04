@@ -76,12 +76,21 @@ public class MainActivity extends AppCompatActivity {
                 recreate();*/
             }
         });
+        Button notas = findViewById(R.id.button2);
+        notas.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent(getApplicationContext(),Notas.class);
+                startActivity(i);
+
+            }
+        });
                 //viewpager//
         mMenu=getResources().getStringArray(R.array.menu);
         mViewPager=(ViewPager)findViewById(R.id.pager);
         mSectionsPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
         //adapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
-        String a = getResources().getString(R.string.prueba);
+        //String a = getResources().getString(R.string.prueba);
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(0,mMenu[0],mImageIds));
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(1,mMenu[1],mImageIds));
         mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(2,mMenu[2],mImageIds));
@@ -206,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
         Locale.setDefault(locale);
         Configuration config  = getBaseContext().getResources().getConfiguration();
         config.setLocale(locale);
+        //getBaseContext().createConfigurationContext(config);
         getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics()) ;
         SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
         editor.putString("My_Lang", lang);

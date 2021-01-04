@@ -35,4 +35,14 @@
         android:layout_alignBottom="@+id/pager"
         android:layout_marginBottom="-46dp"
         android:text="@string/cambiar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pager"
+        android:layout_alignEnd="@+id/pager"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/notas" />
 </RelativeLayout>

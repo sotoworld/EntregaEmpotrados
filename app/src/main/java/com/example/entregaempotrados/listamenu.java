@@ -26,6 +26,7 @@ public class listamenu extends AppCompatActivity {
             R.drawable.monumentos_muralla,
             R.drawable.monumentos_rey_moro,
             R.drawable.monumentos_toro,
+            R.drawable.monumentos_arco, 
     };
 
 
