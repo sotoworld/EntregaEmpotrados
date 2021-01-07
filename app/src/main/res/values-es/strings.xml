@@ -51,7 +51,7 @@
     <string name="cancel">Cancelar</string>
     <string name="title">Titulo</string>
     <string name="content">Contenido</string>
-    <string name="changeLang">Change Language</string>
+    <string name="changeLang">Cambiar idioma</string>
     <string name="error">Error</string>
     <string name="conError">La nota debe tener un titulo</string>
     <string name="newnote">Nueva Nota</string>
