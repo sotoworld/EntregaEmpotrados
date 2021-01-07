@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
     protected static Integer[] mImageIds={
             R.drawable.monumentos,
             R.drawable.museos,
+            R.drawable.ayuntamiento,
+            R.drawable.ayuntamiento,
+            R.drawable.ayuntamiento,
+            R.drawable.ayuntamiento,
     };
 
     ListView lista;
@@ -94,12 +98,12 @@ public class MainActivity extends AppCompatActivity {
         mSectionsPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
         //adapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         //String a = getResources().getString(R.string.prueba);
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(0,mMenu[0],mImageIds));
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(1,mMenu[1],mImageIds));
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(2,mMenu[2],mImageIds));
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(3,mMenu[3],mImageIds));
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(4,mMenu[4],mImageIds));
-        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(5,mMenu[5],mImageIds));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(0,mMenu[0],mImageIds[0]));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(1,mMenu[1],mImageIds[1]));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(2,mMenu[2],mImageIds[2]));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(3,mMenu[3],mImageIds[3]));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(4,mMenu[4],mImageIds[4]));
+        mSectionsPagerAdapter.addFragment(Fragmentos.newInstance(5,mMenu[5],mImageIds[5]));
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
     }
@@ -139,13 +143,13 @@ public class MainActivity extends AppCompatActivity {
         private String nombre_menu;
         private int image;
 
-        public static Fragmentos newInstance(int currentViewPager, String menuNombre, Integer[] image){
+        public static Fragmentos newInstance(int currentViewPager, String menuNombre, Integer image){
             Fragmentos fragment=new Fragmentos();
 
             Bundle args= new Bundle();
             args.putInt(CURRENT_VIEWPAGER,currentViewPager);
             args.putString(NOMBRE_MENU,menuNombre);
-            args.putInt(IMAGEVIEW,image[0]);
+            args.putInt(IMAGEVIEW,image);
             fragment.setArguments(args);
             fragment.setRetainInstance(true);
             return fragment;
