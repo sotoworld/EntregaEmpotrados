@@ -60,6 +60,15 @@ public class paginasmenu extends AppCompatActivity {
             R.drawable.taxi1,
     };
 
+    int[] imagenRestaurantes = {
+            R.drawable.restaurantes_quintotramo,
+            R.drawable.restaurantes_tropicana,
+            R.drawable.restaurantes_siempreigual,
+            R.drawable.restaurantes_almocabar,
+            R.drawable.restaurantes_lasmaravillas,
+            R.drawable.restaurantes_casamaria,
+    };
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,6 +114,11 @@ public class paginasmenu extends AppCompatActivity {
                 titulo = getResources().getStringArray(R.array.agendacultural_titulo);
                 contenido = getResources().getStringArray(R.array.agendacultural_contenido);
                 imgImagen.setImageResource(imagenCultural[position]);
+                break;
+            case 3:
+                titulo = getResources().getStringArray(R.array.restaurantes_titulo);
+                contenido = getResources().getStringArray(R.array.restaurantes_contenido);
+                imgImagen.setImageResource(imagenRestaurantes[position]);
                 break;
             case 4://Hoteles
                 titulo = getResources().getStringArray(R.array.hotel_titulo);

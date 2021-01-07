@@ -158,6 +158,29 @@
         </item>
     </string-array>
 
+    <string-array name="restaurantes_titulo">
+        <item> Taberna Quinto Tramo </item>
+        <item> Tropicana Ronda</item>
+        <item> Siempre Igual </item>
+        <item> Almocabar </item>
+        <item> Restaurante Las Maravillas </item>
+        <item> Casa Maria </item>
+    </string-array>
+
+    <string-array name="restaurantes_contenido">
+        <item> Taberna situada en la calle Carrera Espinel en Ronda, especializada en comida tradicional española y tapas y ocn una intención de mezclar la tradición española con un toque de restaurante más moderno,
+		algo denotado en su eslogan: No existe modernidad sin una buena tradicion. Adaptado además para la situación de la covid-19.</item>
+        <item> Restaurante localizado en la Calle Virgen de los Dolores con una gran variedad en sus platos y servicio, contando con carnes selectas ecologicas, productos con denominacion de origen certificada y ganador de un premio nacional
+		de gastronomia plato de Oro. Asimismo, cuenta con un rango de precios de 25-35€ por persona, y cuenta con las restricciones pertinentes para poder ofrecer un servicio de gran calidad en el contexto de la pandemia global. </item>
+        <item> Restaurante orientado a las tapas y raciones para compartir entre varias personas, por lo que es recomendable para grupos grandes. Situado en la Calle San José. Gracias a su especialización en tapas es bastante asequible tanto para comidas
+		como para tomar algo más ligero.</item>
+        <item> Restaurante situado en la Plaza Ruedo Alameda, este restaurante se especializa en ofrecer a los clientes una oferta de vinos y bebidas espumosas de gran calidad a un precio totalmente asequible, por lo que es el mejor sitio de Ronda
+		para realizar catas de este tipo de bebidas. Cuenta además con restricciones acorde a la ley vigente para poder seguir las recomendiaciones contra la covid-19</item>
+        <item> Este restaurante está situado en la calle Carrera Espinel, ofrece un lugar acogedor en el centro de Ronda y está orientado a ofrecer una comida tradicional de Ronda, intentando juntarla con una experiencia culinaria más moderna y exótica, por lo que podrás
+		tener comidas que no encontrarás en ningún otro sitio cercano.</item>
+        <item> Este restaurante, el cual podemos encontrar en la Plaza Ruedo Alameda, se centra en otorgar al cliente una experiencia totalmente tradicional con respecto a la comida de Ronda, por lo que cualquiera que quiera experimentar los orígenes del pueblo está obligado a ir</item>
+    </string-array>
+
     <string name="cambiar">Cambiar idioma</string>
     <string name="notas">Notas</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

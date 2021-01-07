@@ -126,38 +126,61 @@
     </string-array>
 
     <string-array name="hotel_contenido">
-        <item>Hotel de 1 estrella
+        <item>1 star Hotel
             Calle Ruedo Doña Elvira, 12, 29400 Ronda, Málaga.
             952 87 22 32
         </item>
-        <item> Hotel de 3 estrellas
+        <item> 3 star Hotel
             Partida los Morales, 28, 29400 Ronda, Málaga.
             665 82 78 62
         </item>
-        <item>  Hotel de 4 estrellas
+        <item>  4 star Hotel
             Calle Virgen de la Paz, 16, 29400 Ronda, Málaga
             952 87 03 00
         </item>
-        <item> Hotel de 4 estrellas
+        <item> 4 star Hotel
             Plaza España, s/n, 29400 Ronda, Málaga.
             952 87 75 00
         </item>
-        <item>  Hotel de 4 estrellas
+        <item>  4 star Hotel
             Calle Virgen de la Paz, 26, 29400 Ronda, Málaga
             952 18 70 72
         </item>
-        <item>  Hotel de 2 estrellas
+        <item>  2 star Hotel
             Camino de Laura, 29400 Ronda, Málaga
             952 11 43 70
         </item>
-        <item> Hotel de 4 estrellas
+        <item> 4 star Hotel
             Calle Jerez, 25, 29400 Ronda, Málaga.
             952 87 12 40
         </item>
-        <item>  Hotel de 4 estrellas
+        <item>  4 star Hotel
             Crta A-374, km 26, A-374, 29400 Ronda, Málaga
             641 46 13 34
         </item>
+    </string-array>
+
+    <string-array name="restaurantes_titulo">
+        <item> Fifth Section Tavern </item>
+        <item> Tropicana Ronda</item>
+        <item> Siempre Igual </item>
+        <item> Almocabar </item>
+        <item> Las Maravillas Restaurant</item>
+        <item> Casa Maria </item>
+    </string-array>
+
+    <string-array name="restaurantes_contenido">
+        <item> Tavern located on Carrera Espinel street in Ronda, specialized in traditional Spanish food and tapas and with an intention to mix Spanish tradition with a touch of a more modern restaurant.
+        something denoted in its slogan: There is no modernity without a good tradition. Also adapted for the covid-19 situation.</item>
+        <item>Restaurant located on Calle Virgen de los Dolores with a great variety in its dishes and service, with select organic meats, products with certified designation of origin and winner of a national award
+        plate of Oro gastronomy. It also has a price range of € 25-35 per person, and has the relevant restrictions to be able to offer a high quality service in the context of the global pandemic.</item>
+        <item> Restaurant oriented to tapas and portions to share among several people, so it is recommended for large groups. Located on Calle San José. Thanks to its specialization in tapas it is quite affordable for both meals
+        like to eat something lighter.</item>
+        <item>Restaurant located in the Plaza Ruedo Alameda, this restaurant specializes in offering customers an offer of high quality wines and sparkling drinks at a totally affordable price, making it the best place in Ronda
+        to make tastings of this type of drinks. It also has restrictions according to current law to be able to follow the recommendations against covid-19 </item>
+        <item> This restaurant is located on Carrera Espinel street, offers a cozy place in the center of Ronda and is oriented to offer a traditional meal from Ronda, trying to combine it with a more modern and exotic culinary experience, so you can
+        have meals that you won\'t find anywhere else nearby.</item>
+        <item>This restaurant, which we can find in the Plaza Ruedo Alameda, focuses on giving the customer a totally traditional experience with respect to the food of Ronda, so anyone who wants to experience the origins of the town is obliged to go</item>
     </string-array>
 
     <string name="cambiar">Change Language</string>

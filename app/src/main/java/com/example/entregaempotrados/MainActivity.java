@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.monumentos,
             R.drawable.museos,
             R.drawable.ayuntamiento,
-            R.drawable.ayuntamiento,
+            R.drawable.restaurantes,
             R.drawable.hotel,
             R.drawable.taxi,
     };

@@ -59,6 +59,15 @@ public class listamenu extends AppCompatActivity {
             R.drawable.taxi1,
     };
 
+    int[] imagenRestaurantes = {
+            R.drawable.restaurantes_quintotramo,
+            R.drawable.restaurantes_tropicana,
+            R.drawable.restaurantes_siempreigual,
+            R.drawable.restaurantes_almocabar,
+            R.drawable.restaurantes_lasmaravillas,
+            R.drawable.restaurantes_casamaria,
+    };
+
 
     String[] titulo;
     String[] contenido;
@@ -115,9 +124,9 @@ public class listamenu extends AppCompatActivity {
                 adapter = new ListViewAdapter(this,imagenCultural, titulo, contenido);
                 break;
             case 3://donde comer
-                titulo = getResources().getStringArray(R.array.monumentos_titulo);
-                contenido = getResources().getStringArray(R.array.monumentos_contenido);
-                adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
+                titulo = getResources().getStringArray(R.array.restaurantes_titulo);
+                contenido = getResources().getStringArray(R.array.restaurantes_contenido);
+                adapter = new ListViewAdapter(this,imagenRestaurantes, titulo, contenido);
                 break;
             case 4://donde dormir
                 titulo = getResources().getStringArray(R.array.hotel_titulo);
