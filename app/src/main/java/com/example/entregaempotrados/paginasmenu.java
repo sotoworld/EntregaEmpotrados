@@ -46,13 +46,13 @@ public class paginasmenu extends AppCompatActivity {
         int idmenu  = (int) SingletonMap.getInstance().get(listamenu.clave);
         final int position = (int) SingletonMap.getInstance().get(listamenu.clave2);
         String nombreMenu = (String) SingletonMap.getInstance().get(listamenu.clave3);
-        String nombreSubMenu = (String) SingletonMap.getInstance().get(listamenu.clave4);
+       // String[] nombreSubMenu = (String[]) SingletonMap.getInstance().get(listamenu.clave4);
 
 
         //indicar tutilo y subtitulo
 
         actionBar.setTitle(nombreMenu);
-        actionBar.setSubtitle(nombreSubMenu);
+       // actionBar.setSubtitle(nombreSubMenu);
 
         txtTitulo = (TextView) findViewById(R.id.tv_titulo_paginasmenu);
         txtContenido = (TextView) findViewById(R.id.tv_contenido_paginasmenu);
