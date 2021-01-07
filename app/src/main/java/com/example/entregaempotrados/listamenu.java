@@ -36,6 +36,11 @@ public class listamenu extends AppCompatActivity {
     private ListView lista;
     ListViewAdapter adapter;
 
+    static String clave = "clave";
+    static String clave2 = "clave2";
+    static String clave3 = "clave3";
+    static String clave4 = "clave4";
+
     int currentViewPager;
     String nombreMenu;
 
@@ -46,10 +51,12 @@ public class listamenu extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);//ir atras
 
+
         Bundle extras = getIntent().getExtras();
         //currentViewPager = extras.getInt("currentViewPager");
         currentViewPager = (int) SingletonMap.getInstance().get(MainActivity.clave);
-        nombreMenu = extras.getString("nombreMenu");
+        nombreMenu = (String) SingletonMap.getInstance().get(MainActivity.clave2);
+        actionBar.setTitle(nombreMenu);
         Log.i("domingo", "currentViewPager:" + currentViewPager);
 
 
@@ -105,6 +112,10 @@ public class listamenu extends AppCompatActivity {
                 i.putExtra("position", position);
                 i.putExtra("nombreMenu", nombreMenu);
                 i.putExtra("nombreSubMenu", titulo);
+                SingletonMap.getInstance().put(listamenu.clave, currentViewPager);
+                SingletonMap.getInstance().put(listamenu.clave2, position);
+                SingletonMap.getInstance().put(listamenu.clave3, nombreMenu);
+                SingletonMap.getInstance().put(listamenu.clave4, titulo);
                 startActivity(i);
                 //overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 

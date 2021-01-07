@@ -1,6 +1,7 @@
 package com.example.entregaempotrados;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,10 +39,15 @@ public class paginasmenu extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);//ir atras
 
         Bundle extras = getIntent().getExtras();
-        int idmenu = extras.getInt("idmenu");
+        /*int idmenu = extras.getInt("idmenu");
         final int position = extras.getInt("position");
         String nombreMenu = extras.getString("nombreMenu");
-        String nombreSubMenu = extras.getString("nombreSubMenu");
+        String nombreSubMenu = extras.getString("nombreSubMenu");*/
+        int idmenu  = (int) SingletonMap.getInstance().get(listamenu.clave);
+        final int position = (int) SingletonMap.getInstance().get(listamenu.clave2);
+        String nombreMenu = (String) SingletonMap.getInstance().get(listamenu.clave3);
+        String nombreSubMenu = (String) SingletonMap.getInstance().get(listamenu.clave4);
+
 
         //indicar tutilo y subtitulo
 
@@ -65,5 +71,6 @@ public class paginasmenu extends AppCompatActivity {
         }
         txtTitulo.setText(titulo[position]);
         txtContenido.setText(contenido[position]);
+        txtContenido.setMovementMethod(new ScrollingMovementMethod());
     }
 }

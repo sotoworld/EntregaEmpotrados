@@ -13,7 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EntregaEmpotrados">
-        <activity android:name=".Notas"></activity>
+        <activity android:name=".NuevaNota"></activity>
+        <activity
+            android:name=".ui.login.newNote"
+            android:label="@string/title_activity_new_note"></activity>
+        <activity
+            android:name=".prueba"
+            android:label="@string/title_activity_prueba"
+            android:theme="@style/Theme.EntregaEmpotrados.NoActionBar" />
+        <activity
+            android:name=".Notas"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".listamenu"
             android:parentActivityName=".MainActivity">

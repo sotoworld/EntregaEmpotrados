@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -12,15 +13,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Notas extends AppCompatActivity {
     NotesDbHelper dbHelper;
     SQLiteDatabase db;
-    String[] titulo = new String[10];
-    String[] contenido = new String[10];
+    List<String> listTitulos = new ArrayList<String>();
+    List<String> listContenido = new ArrayList<String>();
+    String[] titulo;
+    String[] contenido;
     private ListView lista;
     ListViewAdapter adapter;
     @Override
@@ -32,11 +41,11 @@ public class Notas extends AppCompatActivity {
 
         lista = (ListView) findViewById(R.id.ListView_ListaNotas);
         //lista = (ListView) findViewById(R.id.ListView_ListaMenu);
-        dbHelper = new NotesDbHelper(getApplicationContext(), "notas.db");
+        dbHelper = new NotesDbHelper(getApplicationContext(), "notas2.db");
         db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        /*values.put(NotesContract.NoteEntry.COLUMN_NAME_KEY, "hola");
-        values.put(NotesContract.NoteEntry.COLUMN_NAME_VAL, "El titulo es hola y yo escribo asi");
+       /* values.put(NotesContract.NoteEntry.COLUMN_NAME_KEY, "Buenas");
+        values.put(NotesContract.NoteEntry.COLUMN_NAME_VAL, "Es to va asi");
         long id = db.insert(NotesContract.NoteEntry.TABLE_NAME, null, values);*/
         Cursor cursor = db.query(NotesContract.NoteEntry.TABLE_NAME,null,null,null,null,null,null);
         int i = 0;
@@ -44,14 +53,29 @@ public class Notas extends AppCompatActivity {
             while (cursor.moveToNext()) {
                 String clave = cursor.getString(cursor.getColumnIndex(NotesContract.NoteEntry.COLUMN_NAME_KEY));
                 String valor = cursor.getString(cursor.getColumnIndex(NotesContract.NoteEntry.COLUMN_NAME_VAL));
-                titulo[i] = clave;
+                listTitulos.add(clave);
+                listContenido.add(valor);
+               /* titulo[i] = clave;
                 contenido[i] = valor;
-                i++;
-                //list.add(new Pair<String,String>(clave, valor));
+                i++;*/
+                //list.add(new Pair<String,String>(clave, valor));*/
             }
         } finally {
             cursor.close();
         }
+        FloatingActionButton nueva = findViewById(R.id.floatingActionButton2);
+        nueva.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent(getApplicationContext(),NuevaNota.class);
+                startActivity(i);
+
+            }
+        });
+        titulo = new String[listTitulos.size()];
+        contenido = new String[listContenido.size()];
+        titulo = listTitulos.toArray(titulo);
+        contenido = listContenido.toArray(contenido);
         adapter = new ListViewAdapter(getApplicationContext(),null,titulo,contenido);
         lista.setAdapter(adapter);
 
@@ -96,7 +120,7 @@ public class Notas extends AppCompatActivity {
             TextView txtContenido;
 
             //http://developer.android.com/intl/es/reference/android/view/LayoutInflater.html
-            inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View itemView = inflater.inflate(R.layout.menu_notas, parent, false);
 

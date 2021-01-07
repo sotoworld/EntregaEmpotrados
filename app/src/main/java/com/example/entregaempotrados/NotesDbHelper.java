@@ -10,7 +10,7 @@ public class NotesDbHelper extends SQLiteOpenHelper {
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + NotesContract.NoteEntry.TABLE_NAME + " (" +
                     NotesContract.NoteEntry._ID + " INTEGER PRIMARY KEY," +
-                    NotesContract.NoteEntry.COLUMN_NAME_KEY + " TEXT UNIQUE," +
+                    NotesContract.NoteEntry.COLUMN_NAME_KEY + " TEXT," +
                     NotesContract.NoteEntry.COLUMN_NAME_VAL + " TEXT" +
             " )";
 

@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager mViewPager;
     public String [] mMenu;
     static String clave = "clave";
+    static String clave2 = "clave2";
     private String info;
     private PagerAdapter adapter;
 
@@ -170,9 +171,10 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(getActivity(), listamenu.class);
-                    i.putExtra("currentViewPager", currentViewPager);
-                    i.putExtra("nombreMenu", nombre_menu);
+                   /* i.putExtra("currentViewPager", currentViewPager);
+                    i.putExtra("nombreMenu", nombre_menu);*/
                     SingletonMap.getInstance().put(MainActivity.clave, currentViewPager);
+                    SingletonMap.getInstance().put(MainActivity.clave2, nombre_menu);
                     startActivity(i);
                 }
             });
@@ -183,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
     private void mostrarVentanaCambio(){
         final String[] ids = {"English", "Español"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-        mBuilder.setTitle("Choose Language");
+        mBuilder.setTitle(R.string.changeLang);
         mBuilder.setSingleChoiceItems(ids, -1, new DialogInterface.OnClickListener(){
 
             @Override

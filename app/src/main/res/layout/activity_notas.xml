@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Notas">
-
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,6 +19,19 @@
         <ListView
             android:id="@+id/ListView_ListaNotas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+        </ListView>
     </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:layout_margin="16dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
