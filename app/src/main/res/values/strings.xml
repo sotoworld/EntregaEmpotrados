@@ -88,6 +88,14 @@
         </item>
     </string-array>
 
+    <string-array name="agendacultural_titulo">
+        <item> Cultural Calendar </item>
+    </string-array>
+
+    <string-array name="agendacultural_contenido">
+        <item> Due to the circumstances of the covid we do not have events on the canlendar. </item>
+    </string-array>
+
     <string name="cambiar">Change Language</string>
     <string name="notas">Notes</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

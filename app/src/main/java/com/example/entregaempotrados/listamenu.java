@@ -37,6 +37,11 @@ public class listamenu extends AppCompatActivity {
             R.drawable.museos_plaza,
     };
 
+    private int[] imagenCultural = {
+            R.drawable.ayuntamiento,
+
+    };
+
 
     String[] titulo;
     String[] contenido;
@@ -88,9 +93,9 @@ public class listamenu extends AppCompatActivity {
                 break;
             case 2://agenda cultural
                 Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
-                titulo = getResources().getStringArray(R.array.monumentos_titulo);
-                contenido = getResources().getStringArray(R.array.monumentos_contenido);
-                adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
+                titulo = getResources().getStringArray(R.array.agendacultural_titulo);
+                contenido = getResources().getStringArray(R.array.agendacultural_contenido);
+                adapter = new ListViewAdapter(this,imagenCultural, titulo, contenido);
                 break;
             case 3://donde comer
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);

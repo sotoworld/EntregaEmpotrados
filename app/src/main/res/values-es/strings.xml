@@ -85,6 +85,15 @@
             En el Picadero el visitante puede ver en ocasiones los entrenamientos de la Escuela de Equitación de la RMR, la más antigua de España.
         </item>
     </string-array>
+
+    <string-array name="agendacultural_titulo">
+        <item> Agenda </item>
+    </string-array>
+
+    <string-array name="agendacultural_contenido">
+        <item> Debido a las circunstancias del covid no tenemos eventos en la agenda. </item>
+    </string-array>
+
     <string name="cambiar">Cambiar idioma</string>
     <string name="notas">Notas</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

@@ -38,6 +38,11 @@ public class paginasmenu extends AppCompatActivity {
             R.drawable.museos_plaza,
     };
 
+    private int[] imagenCultural = {
+            R.drawable.ayuntamiento,
+
+    };
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +83,11 @@ public class paginasmenu extends AppCompatActivity {
                 titulo = getResources().getStringArray(R.array.museos_titulo);
                 contenido = getResources().getStringArray(R.array.museos_contenido);
                 imgImagen.setImageResource(imagenMuseos[position]);
+                break;
+            case 2://museos
+                titulo = getResources().getStringArray(R.array.agendacultural_titulo);
+                contenido = getResources().getStringArray(R.array.agendacultural_contenido);
+                imgImagen.setImageResource(imagenCultural[position]);
                 break;
 
             default:
