@@ -42,6 +42,17 @@ public class listamenu extends AppCompatActivity {
 
     };
 
+    private int[] imagenHotel = {
+            R.drawable.hotel_ronda,
+            R.drawable.hotel_rondamoments,
+            R.drawable.hotel_catalonia,
+            R.drawable.hotel_parador,
+            R.drawable.hotel_maestranza,
+            R.drawable.hotel_arriadh,
+            R.drawable.hotel_cataloniaspa,
+            R.drawable.hotel_posada,
+    };
+
     private int[] imagenTaxi = {
             R.drawable.taxi1,
             R.drawable.taxi2,
@@ -109,9 +120,9 @@ public class listamenu extends AppCompatActivity {
                 adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
                 break;
             case 4://donde dormir
-                titulo = getResources().getStringArray(R.array.monumentos_titulo);
-                contenido = getResources().getStringArray(R.array.monumentos_contenido);
-                adapter = new ListViewAdapter(this,imagenMonumentos,titulo, contenido);
+                titulo = getResources().getStringArray(R.array.hotel_titulo);
+                contenido = getResources().getStringArray(R.array.hotel_contenido);
+                adapter = new ListViewAdapter(this,imagenHotel,titulo, contenido);
                 break;
             case 5://informacion de interes
                 titulo = getResources().getStringArray(R.array.taxi_titulo);

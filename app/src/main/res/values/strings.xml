@@ -114,6 +114,52 @@
         </item>
     </string-array>
 
+    <string-array name="hotel_titulo">
+        <item> Hotel Ronda </item>
+        <item> Hotel Ronda Moments </item>
+        <item> Hotel Catalonia Ronda </item>
+        <item> Parador de Ronda </item>
+        <item> Hotel Maestranza Ronda </item>
+        <item> Arriadh Hotel </item>
+        <item> Hotel Catalonia Reina Victoria Wellness and Spa </item>
+        <item> Hotel Posada de Ronda </item>
+    </string-array>
+
+    <string-array name="hotel_contenido">
+        <item>Hotel de 1 estrella
+            Calle Ruedo Doña Elvira, 12, 29400 Ronda, Málaga.
+            952 87 22 32
+        </item>
+        <item> Hotel de 3 estrellas
+            Partida los Morales, 28, 29400 Ronda, Málaga.
+            665 82 78 62
+        </item>
+        <item>  Hotel de 4 estrellas
+            Calle Virgen de la Paz, 16, 29400 Ronda, Málaga
+            952 87 03 00
+        </item>
+        <item> Hotel de 4 estrellas
+            Plaza España, s/n, 29400 Ronda, Málaga.
+            952 87 75 00
+        </item>
+        <item>  Hotel de 4 estrellas
+            Calle Virgen de la Paz, 26, 29400 Ronda, Málaga
+            952 18 70 72
+        </item>
+        <item>  Hotel de 2 estrellas
+            Camino de Laura, 29400 Ronda, Málaga
+            952 11 43 70
+        </item>
+        <item> Hotel de 4 estrellas
+            Calle Jerez, 25, 29400 Ronda, Málaga.
+            952 87 12 40
+        </item>
+        <item>  Hotel de 4 estrellas
+            Crta A-374, km 26, A-374, 29400 Ronda, Málaga
+            641 46 13 34
+        </item>
+    </string-array>
+
     <string name="cambiar">Change Language</string>
     <string name="notas">Notes</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

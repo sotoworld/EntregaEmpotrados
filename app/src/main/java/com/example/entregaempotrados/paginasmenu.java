@@ -43,6 +43,17 @@ public class paginasmenu extends AppCompatActivity {
 
     };
 
+    private int[] imagenHotel = {
+            R.drawable.hotel_ronda,
+            R.drawable.hotel_rondamoments,
+            R.drawable.hotel_catalonia,
+            R.drawable.hotel_parador,
+            R.drawable.hotel_maestranza,
+            R.drawable.hotel_arriadh,
+            R.drawable.hotel_cataloniaspa,
+            R.drawable.hotel_posada,
+    };
+
     private int[] imagenTaxi = {
             R.drawable.taxi1,
             R.drawable.taxi2,
@@ -94,6 +105,11 @@ public class paginasmenu extends AppCompatActivity {
                 titulo = getResources().getStringArray(R.array.agendacultural_titulo);
                 contenido = getResources().getStringArray(R.array.agendacultural_contenido);
                 imgImagen.setImageResource(imagenCultural[position]);
+                break;
+            case 4://Hoteles
+                titulo = getResources().getStringArray(R.array.hotel_titulo);
+                contenido = getResources().getStringArray(R.array.hotel_contenido);
+                imgImagen.setImageResource(imagenHotel[position]);
                 break;
             case 5://taxis
                 titulo = getResources().getStringArray(R.array.taxi_titulo);
