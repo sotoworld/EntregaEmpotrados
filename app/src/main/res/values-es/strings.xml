@@ -39,6 +39,52 @@
         Fue construido entre siglos XIII-XIV d.C junto al Arroyo de las Culebras, para asegurar el abastecimiento de agua, que se desplazaba a través de un sistema de noria, perfectamente conservado en la actualidad.
         Estructurándose éstos en tres zonas fundamentales, siguiendo el modelo romano: salas de baño frío, templado y caliente. Hasta la actualidad ha llegado prácticamente en su integridad el sistema hidráulico de los mismos.</item>
     </string-array>
+
+    <string-array name="museos_titulo">
+        <item> Museo Lara </item>
+        <item> Palacio Mondrag\ón</item>
+        <item> Museo del Bandolero </item>
+        <item> Museo Unicaja Joaqu\ín Peinado </item>
+        <item> Museo Taurino De La Real Maestranza De Caballer\ía De Ronda</item>
+        <item> Plaza Museo de Ronda RMR </item>
+    </string-array>
+
+    <string-array name="museos_contenido">
+        <item> El Museo Lara es un museo de arte y antiguedades situado en la localidad de Ronda, en la provincia de M\álaga, España.
+            Tiene su sede en la antigua Casa-palacio de los Condes de la Conquista de las Islas Batanes, en el casco antiguo de la ciudad.
+            Contiene una colecci\ón de más de 2000 obras y piezas organizadas en siete salas tem\áticas: sala de armas, sala de relojes, coleccionismo, sala rom\ántica, sala cient\ífica, artes populares y sala arqueológica. </item>
+        <item> El palacio de Mondrag\ón, tambi\én conocido como palacio del marqu\és de Villasierra, es un edificio mud\éjar renacentista situado en el casco antiguo de la ciudad de Ronda, España.
+            En la actualidad el palacio alberga el Museo Municipal de Ronda, que contiene una colección de interés histórico y arqueológico.  </item>
+        <item> El museo, situado en una casa de finales del siglo XIX, está estructurado en cinco salas. Así, se encuentra la denominada Viajeros románticos y documentaci\ón, en la que se recopilan partidas de bautismo y de defunci\ón, certificados de sepultura y de b\úsqueda y captura, adem\ás de fotograf\ías de bandoleros conocidos como Jos\é Mar\ía Hinojosa El Tempranillo, Diego Corrientes Mateos, Jos\é Ulloa Tragabuches o Francisco R\íos Gonz\ález Francisco R\íos González.
+            Otra de las dependencias es Vivir el bandolerismo donde se representan tres escenificaciones: Mesón, Secuestro y Cueva y en las que los maniquíes aparecen ataviados con el vestuario propio de la época que se reproduce.
+            También hay una colección de cómic compuesta por más de 200 ejemplares fechados hacia 1940, en los que se narra la vida de los bandoleros.
+            Por otra parte, tambi\én se puede visitar Los hombres y los nombres, que alberga una exposici\ón de trajes, óleos, acuarelas y fotograf\ías de los bandoleros m\ás reconocidos por el público, así como algunos acontecimientos que protagonizaron muchos de ellos; o Los que siguieron el rastro, dedicada a las fuerzas de seguridad que persiguieron a los bandoleros: la Guardia Civil.
+            En ella, adem\ás de encontrar registros de captura de bandoleros y boletines oficiales de este cuerpo de seguridad, se da a conocer, a través de un mapa, la distribución de las comandancias; los mandos, condecoraciones y los primeros uniformes de la Benemérita. Todo material original.
+            Por \último, el recorrido se completa en la sala Armas y testimonios escritos, la cual recoge una amplia colección de armamento propio de los bandoleros tales como pistolas, navajas o polainas. Además, el museo también cuenta con una biblioteca que alberga más de 495 libros escritos por personajes que vivieron de cerca esta etapa de la historia y cuyas ediciones datan desde 1823 hasta la actualidad.
+        </item>
+        <item> El Museo Joaqu\ín Peinado de Ronda, se encuentra en el casco antiguo de Ronda, entre el Palacio Mondrag\ón y la Iglesia de Santa Mar\ía la Mayor
+            Este museo intenta reflejar parte de la vida del Pintor Joaqu\ín Peinado, fue construido a principios del siglo XX y en \él se pueden apreciar elementos barrocos, hispano-musulmanes y renacentistas.
+            Tiene dos patios con columnas toscanas en las que se apoyan los balcones de la planta alta.
+            Unicaja ha invertido más de 830.000€ en el museo Peinado para recuperar las instalaciones, donde se encuentran 195 obras del pintor andaluz.
+            El museo se organiza en 7 salas, donde se exponen obras sobre diversos temas:
+            Sala 1 Paisajes
+            Sala 2 M\éxico
+            Sala 3 Animales
+            Sala 4 Figuras y retratos
+            Sala 5 Desnudos y er\óticas
+            Sala 6 El Quijote
+            Sala 7 Sal\ón Mud\éjar
+        </item>
+        <item> El Museo de la Tauromaquia ocupa un cuarto de la plaza bajo los tendidos de sombra.
+            Su recorrido ilustra, de forma did\áctica, los or\ígenes m\íticos del toreo en la cultura universal, su arraigo en la Pen\ínsula Ib\érica y la evoluci\ón de la tauromaquia, desde el toreo popular y las funciones reales del toreo caballeresco, hasta convertirse en un espect\áculo reglamentado, complementado con testimonios de la importancia de Ronda y sus dinast\ías de toreros, los Romero y los Ord\óñez, en la historia de la fiesta taurina.
+            La colecci\ón agrupa pintura, escultura, artes gr\áficas, textiles, \útiles y objetos, documentación hist\órica y piezas de arte contempor\áneo, acompañados de la informaci\ón pertinente, que sit\úa cada obra en su contexto, hilando con ellos un discurso homog\éneo.
+        </item>
+        <item> La Plaza Museo de Ronda es uno de los conjuntos culturales con mayor n\úmero de visitas de Andaluc\ía. Integra en un solo espacio cuatro siglos de historia.
+            La Plaza de Toros de Ronda, inaugurada en 1785 y declarada Bien de Inter\és Cultural en 1993, es la m\ás antigua del mundo para espect\áculos ecuestres y taurinos.
+            Ubicadas bajo los tendidos de la plaza alberga tres colecciones: la Real Guarnicionería de la Casa de Orleans, la Colección de la Tauromaquia y la sala de la Historia de la RMR.
+            En el Picadero el visitante puede ver en ocasiones los entrenamientos de la Escuela de Equitación de la RMR, la más antigua de España.
+        </item>
+    </string-array>
     <string name="cambiar">Cambiar idioma</string>
     <string name="notas">Notas</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

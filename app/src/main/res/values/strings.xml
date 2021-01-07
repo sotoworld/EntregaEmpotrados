@@ -41,6 +41,53 @@
         It was built between the 13th-14th centuries AD next to the Arroyo de las Culebras, to ensure the supply of water, which moved through a system of waterwheel, perfectly preserved today.
         These are structured in three fundamental areas, following the Roman model: cold, warm and hot bath rooms. Until now the hydraulic system of the same has practically arrived in its integrity.</item>
     </string-array>
+
+    <string-array name="museos_titulo">
+        <item> Lara Museum </item>
+        <item> Mondragon Palace</item>
+        <item> Bandit Museum </item>
+        <item> Unicaja Joaquin Peinado Museum </item>
+        <item> Bullfighting Museum of the Real Maestranza de Caballeria de Ronda</item>
+        <item> Plaza Museo de Ronda RMR </item>
+    </string-array>
+
+    <string-array name="museos_contenido">
+        <item> The Lara Museum is an art and antique museum located in the town of Ronda, in the province of Malaga, Spain.
+            It is based in the old Palace-House of the Counts of the Conquest of the Batanes Islands, in the old part of the city.
+            It contains a collection of more than 2000 works and pieces organized in seven thematic rooms: the weapons room, the clock room, collecting, the romantic room, the scientific room, the popular arts and the archaeological room.</item>
+        <item> The Mondragon Palace, also known as the Palace of the Marquis of Villasierra, is a Mudejar-Renaissance building located in the old town of Ronda, Spain.
+            Today the palace houses the Municipal Museum of Ronda, which contains a collection of historical and archaeological interest.</item>
+        <item> The museum, located in a house from the end of the 19th century, is structured in five rooms. Thus, there is the so-called Romantic travelers and documentation, in which baptism and death certificates, burial certificates and search and capture certificates are collected, as well as photographs of bandits known as José María Hinojosa "El Tempranillo", Diego Corrientes Mateos, José Ulloa "Tragabuches" or Francisco Ríos González Francisco Ríos González.
+            Another of the dependencies is Vivir el bandolerismo where three stagings are represented: Mes\ón, Secuestro and Cueva and in which the mannequins appear dressed in the costumes typical of the time being reproduced.
+            There is also a comic collection made up of more than 200 copies dated around 1940, in which the life of the bandits is narrated.
+            On the other hand, you can also visit The men and the names, which houses an exhibition of costumes, oil paintings, watercolors and photographs of the bandits most recognized by the public, as well as some events that starred many of them; or Those who followed the trail, dedicated to the security forces that persecuted the bandits: the Civil Guard.
+            In it, in addition to finding records of the capture of bandits and official bulletins of this security body, the distribution of the commanderies is made known through a map; the commands, decorations and the first uniforms of the Benemérita. All original material.
+            Finally, the tour is completed in the Weapons and Written Testimonies room, which contains a wide collection of bandits own weapons such as pistols, knives or leggings. In addition, the museum also has a library that houses more than 495 books written by characters who lived closely at this stage in history and whose editions date from 1823 to the present.
+        </item>
+        <item> The Joaqu\ín Peinado de Ronda Museum (M\álaga province, autonomous community of Andalusia, Spain), is located in the old town of Ronda, between the Mondrag\ón Palace and the Church of Santa Mar\ía la Mayor
+            This museum tries to reflect part of the life of the Painter Joaqu\ín Peinado, it was built at the beginning of the 20th century and in it you can see Baroque, Spanish-Muslim and Renaissance elements.
+            It has two courtyards with Tuscan columns on which the balconies on the upper floor are supported.
+            Unicaja has invested more than € 830,000 in the Peinado museum to restore the facilities, where there are 195 works by the Andalusian painter.
+            The museum is organized in 7 rooms, where works on various topics are exhibited:
+            Room 1 Landscapes
+            Room 2 Mexico
+            Room 3 Animals
+            Room 4 Figures and portraits
+            Room 5 Nudes and erotic
+            Room 6 Don Quixote
+            Room 7 Mudejar Room
+        </item>
+        <item> The Bullfighting Museum occupies a quarter of the square under the shade lines.
+            Its route illustrates, in a didactic way, the mythical origins of bullfighting in universal culture, its roots in the Iberian Peninsula and the evolution of bullfighting, from popular bullfighting and the real functions of knightly bullfighting, to becoming a regulated show. complemented with testimonies of the importance of Ronda and its dynasties of bullfighters, the Romero and the Ord\óñez, in the history of the bullfighting festival.
+            The collection groups together painting, sculpture, graphic arts, textiles, tools and objects, historical documentation and pieces of contemporary art, accompanied by relevant information, which places each work in its context, spinning a homogeneous discourse with them.
+        </item>
+        <item> The Plaza Museo de Ronda is one of the cultural complexes with the highest number of visits in Andalusia. It integrates four centuries of history into a single space.
+            The Ronda Bullring, inaugurated in 1785 and declared an Asset of Cultural Interest in 1993, is the oldest in the world for equestrian and bullfighting shows.
+            Located under the lines of the square it houses three collections: the Royal Saddlery of the House of Orleans, the Bullfighting Collection and the RMR History room.
+            At the Picadero, the visitor can sometimes see the training sessions of the RMR Riding School, the oldest in Spain.
+        </item>
+    </string-array>
+
     <string name="cambiar">Change Language</string>
     <string name="notas">Notes</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

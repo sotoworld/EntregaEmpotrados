@@ -28,6 +28,15 @@ public class listamenu extends AppCompatActivity {
             R.drawable.monumentos_toro,
     };
 
+    int[] imagenMuseos = {
+            R.drawable.museos_lara,
+            R.drawable.museos_palacio_mondragon,
+            R.drawable.museos_bandolero,
+            R.drawable.museos_unicaja,
+            R.drawable.museos_taurino,
+            R.drawable.museos_plaza,
+    };
+
 
     String[] titulo;
     String[] contenido;
@@ -73,9 +82,9 @@ public class listamenu extends AppCompatActivity {
                 break;
             case 1://museos
                 Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
-                titulo = getResources().getStringArray(R.array.monumentos_titulo);
-                contenido = getResources().getStringArray(R.array.monumentos_contenido);
-                adapter = new ListViewAdapter(this,imagenMonumentos,titulo, contenido);
+                titulo = getResources().getStringArray(R.array.museos_titulo);
+                contenido = getResources().getStringArray(R.array.museos_contenido);
+                adapter = new ListViewAdapter(this,imagenMuseos,titulo, contenido);
                 break;
             case 2://agenda cultural
                 Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();

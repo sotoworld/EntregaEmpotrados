@@ -39,8 +39,10 @@ public class MainActivity extends AppCompatActivity {
     private String info;
     private PagerAdapter adapter;
 
+    //todas las imagenes del menu//
     protected static Integer[] mImageIds={
-            R.drawable.monumentos,//todas las imagenes del menu//
+            R.drawable.monumentos,
+            R.drawable.museos,
     };
 
     ListView lista;

@@ -29,6 +29,15 @@ public class paginasmenu extends AppCompatActivity {
             R.drawable.monumentos_arco,
     };
 
+    private int[] imagenMuseos = {
+            R.drawable.museos_lara,
+            R.drawable.museos_palacio_mondragon,
+            R.drawable.museos_bandolero,
+            R.drawable.museos_unicaja,
+            R.drawable.museos_taurino,
+            R.drawable.museos_plaza,
+    };
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +73,11 @@ public class paginasmenu extends AppCompatActivity {
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);
                 contenido = getResources().getStringArray(R.array.monumentos_contenido);
                 imgImagen.setImageResource(imagenMonumentos[position]);
+                break;
+            case 1://museos
+                titulo = getResources().getStringArray(R.array.museos_titulo);
+                contenido = getResources().getStringArray(R.array.museos_contenido);
+                imgImagen.setImageResource(imagenMuseos[position]);
                 break;
 
             default:
