@@ -42,6 +42,12 @@ public class listamenu extends AppCompatActivity {
 
     };
 
+    private int[] imagenTaxi = {
+            R.drawable.taxi1,
+            R.drawable.taxi2,
+            R.drawable.taxi1,
+    };
+
 
     String[] titulo;
     String[] contenido;
@@ -108,9 +114,9 @@ public class listamenu extends AppCompatActivity {
                 adapter = new ListViewAdapter(this,imagenMonumentos,titulo, contenido);
                 break;
             case 5://informacion de interes
-                titulo = getResources().getStringArray(R.array.monumentos_titulo);
-                contenido = getResources().getStringArray(R.array.monumentos_contenido);
-                adapter = new ListViewAdapter(this, imagenMonumentos, titulo, contenido);
+                titulo = getResources().getStringArray(R.array.taxi_titulo);
+                contenido = getResources().getStringArray(R.array.taxi_contenido);
+                adapter = new ListViewAdapter(this, imagenTaxi, titulo, contenido);
                 break;
             default:
                 Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();

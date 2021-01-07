@@ -94,6 +94,24 @@
         <item> Debido a las circunstancias del covid no tenemos eventos en la agenda. </item>
     </string-array>
 
+    <string-array name="taxi_titulo">
+        <item> Servicio Taxi </item>
+        <item> Parada Taxi </item>
+        <item> Servicio Taxi </item>
+    </string-array>
+
+    <string-array name="taxi_contenido">
+        <item> Calle Juan José de Puya, S/N, 29400 Ronda, Málaga.
+        952 87 40 80
+        </item>
+        <item> Calle las Tiendas, 26, 29400 Ronda, Málaga.
+            622 22 36 18
+        </item>
+        <item>  Calle Juan José de Puya, 29400 Ronda, Málaga.
+            636 97 40 03
+        </item>
+    </string-array>
+
     <string name="cambiar">Cambiar idioma</string>
     <string name="notas">Notas</string>
     <string name="title_activity_actividad_prueba">ActividadPrueba</string>

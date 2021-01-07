@@ -43,6 +43,12 @@ public class paginasmenu extends AppCompatActivity {
 
     };
 
+    private int[] imagenTaxi = {
+            R.drawable.taxi1,
+            R.drawable.taxi2,
+            R.drawable.taxi1,
+    };
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +94,11 @@ public class paginasmenu extends AppCompatActivity {
                 titulo = getResources().getStringArray(R.array.agendacultural_titulo);
                 contenido = getResources().getStringArray(R.array.agendacultural_contenido);
                 imgImagen.setImageResource(imagenCultural[position]);
+                break;
+            case 5://taxis
+                titulo = getResources().getStringArray(R.array.taxi_titulo);
+                contenido = getResources().getStringArray(R.array.taxi_contenido);
+                imgImagen.setImageResource(imagenTaxi[position]);
                 break;
 
             default:

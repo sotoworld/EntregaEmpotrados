@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.ayuntamiento,
             R.drawable.ayuntamiento,
             R.drawable.ayuntamiento,
-            R.drawable.ayuntamiento,
+            R.drawable.taxi,
     };
 
     ListView lista;
