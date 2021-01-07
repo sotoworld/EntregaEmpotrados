@@ -79,17 +79,13 @@ public class paginasmenu extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);//ir atras
 
         Bundle extras = getIntent().getExtras();
-        /*int idmenu = extras.getInt("idmenu");
-        final int position = extras.getInt("position");
-        String nombreMenu = extras.getString("nombreMenu");
-        String nombreSubMenu = extras.getString("nombreSubMenu");*/
         int idmenu  = (int) SingletonMap.getInstance().get(listamenu.clave);
         final int position = (int) SingletonMap.getInstance().get(listamenu.clave2);
         String nombreMenu = (String) SingletonMap.getInstance().get(listamenu.clave3);
        // String[] nombreSubMenu = (String[]) SingletonMap.getInstance().get(listamenu.clave4);
 
 
-        //indicar tutilo y subtitulo
+        //indicar titulo y subtitulo
 
         actionBar.setTitle(nombreMenu);
        // actionBar.setSubtitle(nombreSubMenu);
@@ -110,12 +106,12 @@ public class paginasmenu extends AppCompatActivity {
                 contenido = getResources().getStringArray(R.array.museos_contenido);
                 imgImagen.setImageResource(imagenMuseos[position]);
                 break;
-            case 2://museos
+            case 2://Agenda
                 titulo = getResources().getStringArray(R.array.agendacultural_titulo);
                 contenido = getResources().getStringArray(R.array.agendacultural_contenido);
                 imgImagen.setImageResource(imagenCultural[position]);
                 break;
-            case 3:
+            case 3://Restaurantes
                 titulo = getResources().getStringArray(R.array.restaurantes_titulo);
                 contenido = getResources().getStringArray(R.array.restaurantes_contenido);
                 imgImagen.setImageResource(imagenRestaurantes[position]);
