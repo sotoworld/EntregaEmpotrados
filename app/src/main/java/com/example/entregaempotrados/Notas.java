@@ -90,25 +90,25 @@ public class Notas extends AppCompatActivity {
                 Log.v("long clicked","pos: " + pos);
                 AlertDialog dialog = new AlertDialog
                         .Builder(Notas.this)
-                        .setPositiveButton("Sí, eliminar", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(R.string.sieliminar, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 String where = NotesContract.NoteEntry._ID + " = ?";
                                 String[] whereArgs = { listId.get(pos) };
                                 long cnt = db.delete(NotesContract.NoteEntry.TABLE_NAME, where, whereArgs);
-                                Toast.makeText(getApplicationContext(), "Borrado con éxito", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), R.string.borrado, Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(getApplicationContext(),Notas.class);
                                 startActivity(i);
                             }
                         })
-                        .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                        .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
                             }
                         })
-                        .setTitle("Confirmar")
-                        .setMessage("¿Eliminar nota?")
+                        .setTitle(R.string.confirm)
+                        .setMessage(R.string.eliminar)
                         .create();
                 dialog.show();
 
