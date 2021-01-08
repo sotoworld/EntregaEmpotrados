@@ -92,7 +92,7 @@ public class Notas extends AppCompatActivity {
                                 String where = NotesContract.NoteEntry._ID + " = ?";
                                 String[] whereArgs = { listId.get(pos) };
                                 long cnt = db.delete(NotesContract.NoteEntry.TABLE_NAME, where, whereArgs);
-                                Toast.makeText(getApplicationContext(), R.string.borrado, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), getResources().getString(R.string.borrado), Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(getApplicationContext(),Notas.class);
                                 startActivity(i);
                             }
