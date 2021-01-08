@@ -201,6 +201,7 @@
     <string name="borrado">Borrado con éxito</string>
     <string name="confirm">Confirmar</string>
     <string name="eliminar">¿Eliminar nota?</string>
+    <string name="loading">Cargando</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

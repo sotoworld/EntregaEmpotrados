@@ -106,40 +106,43 @@ public class listamenu extends AppCompatActivity {
         lista = (ListView) findViewById(R.id.ListView_ListaMenu);
         switch (currentViewPager) {
             case 0://monumentos
-                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.monumentos_titulo);
                 contenido = getResources().getStringArray(R.array.monumentos_contenido);
                 adapter = new ListViewAdapter(this,imagenMonumentos, titulo, contenido);
                 break;
             case 1://museos
-                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.museos_titulo);
                 contenido = getResources().getStringArray(R.array.museos_contenido);
                 adapter = new ListViewAdapter(this,imagenMuseos,titulo, contenido);
                 break;
             case 2://agenda cultural
-                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.agendacultural_titulo);
                 contenido = getResources().getStringArray(R.array.agendacultural_contenido);
                 adapter = new ListViewAdapter(this,imagenCultural, titulo, contenido);
                 break;
             case 3://donde comer
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.restaurantes_titulo);
                 contenido = getResources().getStringArray(R.array.restaurantes_contenido);
                 adapter = new ListViewAdapter(this,imagenRestaurantes, titulo, contenido);
                 break;
             case 4://donde dormir
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.hotel_titulo);
                 contenido = getResources().getStringArray(R.array.hotel_contenido);
                 adapter = new ListViewAdapter(this,imagenHotel,titulo, contenido);
                 break;
             case 5://informacion de interes
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
                 titulo = getResources().getStringArray(R.array.taxi_titulo);
                 contenido = getResources().getStringArray(R.array.taxi_contenido);
                 adapter = new ListViewAdapter(this, imagenTaxi, titulo, contenido);
                 break;
             default:
-                Toast.makeText(getApplicationContext(), "Cargando", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.loading, Toast.LENGTH_SHORT).show();
         }
         lista.setAdapter(adapter);
 

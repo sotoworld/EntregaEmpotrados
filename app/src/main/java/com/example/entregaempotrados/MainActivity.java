@@ -177,8 +177,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(getActivity(), listamenu.class);
-                   /* i.putExtra("currentViewPager", currentViewPager);
-                    i.putExtra("nombreMenu", nombre_menu);*/
                     SingletonMap.getInstance().put(MainActivity.clave, currentViewPager);
                     SingletonMap.getInstance().put(MainActivity.clave2, nombre_menu);
                     startActivity(i);

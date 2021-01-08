@@ -47,13 +47,9 @@ public class Notas extends AppCompatActivity {
 
         lista = (ListView) findViewById(R.id.ListView_ListaNotas);
         lista.setLongClickable(true);
-        //lista = (ListView) findViewById(R.id.ListView_ListaMenu);
         dbHelper = new NotesDbHelper(getApplicationContext(), "notas2.db");
         db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-       /* values.put(NotesContract.NoteEntry.COLUMN_NAME_KEY, "Buenas");
-        values.put(NotesContract.NoteEntry.COLUMN_NAME_VAL, "Es to va asi");
-        long id = db.insert(NotesContract.NoteEntry.TABLE_NAME, null, values);*/
         Cursor cursor = db.query(NotesContract.NoteEntry.TABLE_NAME,null,null,null,null,null,null);
         int i = 0;
         try {
